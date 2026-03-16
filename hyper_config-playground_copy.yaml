@@ -1,0 +1,110 @@
+paths:
+  input:
+    dir_maps: /home/dassel/Hyper-Playground/maps
+  output:
+    dir_root: /home/dassel/Hyper-Playground/output-playground-copy
+    dir_table_out: params
+    dir_region_out: regions
+    dir_log_out: logs
+files:
+  file_map_name: maps_list_new_images.txt
+  file_table_base: params
+  file_region_base: region_files
+  file_log_name: hyper_py.log
+control:
+  parallel_maps: true
+  n_cores: 10
+  max_total_threads: 50
+  parallel_mode: "sources"
+  map_timeout_minutes: 30
+  detection_only: false
+  datacube: false
+  dir_datacube_slices: maps
+units:
+  convert_mJy: true
+survey:
+  survey_code: 15
+detection:
+  sigma_thres: 6.0
+  use_manual_rms: false
+  rms_value: 3.0e-06
+  roundlim:
+  - -1.82
+  - 1.82
+  sharplim:
+  - 0.29
+  - 5.0
+  # DISABLED FOR TEST RUN 2:
+  # local_max_radius: 0.5
+  # local_max_steepness: 0.01
+  local_max_radius: 1.29
+  local_max_steepness: 0.28
+  use_fixed_source_table: false
+  fixed_source_table_path: source_table.txt
+  fixed_peaks: false
+  xcen_fix:
+  - 1.0
+  - 1.0
+  ycen_fix:
+  - 1.0
+  - 1.0
+photometry:
+  aper_inf: 0.51
+  aper_sup: 1.61
+  fixed_radius: false
+  fwhm_1:
+  - 0.0
+  fwhm_2:
+  - 0.0
+  PA_val:
+  - 0.0
+fit_options:
+  max_group_size: 10  # Maximum sources per group (0 = no limit, all groups attempted)
+  skip_large_groups: false  # If true and max_group_size>0, skip groups; if false, attempt with timeout
+  fit_timeout: 120  # Timeout in seconds for each fit attempt (prevents infinite hangs)
+  fit_method: least_squares
+  loss: linear
+  f_scale: 0.71
+  max_nfev: 50000
+  xtol: 1e-8
+  ftol: 1e-8
+  gtol: 1e-8
+  weights: snr
+  power_snr: 5
+  calc_covar: false
+  min_method: nmse
+  verbose: false
+  use_l2_regularization: true
+  lambda_l2: 1e-4
+  vary: false
+  bg_fitters:
+  - huber
+  huber_epsilons:
+  - 1.35
+  - 1.7
+background:
+  fit_gauss_and_bg_separately: true
+  pol_orders_separate:
+  - 0
+  - 1
+  - 2
+  fix_min_box: 1.2
+  fix_max_box: 5.3
+  fit_gauss_and_bg_together: false
+  polynomial_orders:
+  - 0
+  - 1
+fits_output:
+  fits_fitting: false
+  fits_deblended: false
+  fits_bg_separate: false
+  fits_output_dir_fitting: fits/fitting
+  fits_output_dir_deblended: fits/deblended
+  fits_output_dir_bg_separate: fits/bg_separate
+visualization:
+  visualize_fitting: false
+  visualize_deblended: false
+  visualize_bg_separate: false
+  output_dir_fitting: plots/fitting
+  output_dir_deblended: plots/deblended
+  output_dir_bg_separate: plots/bg_separate

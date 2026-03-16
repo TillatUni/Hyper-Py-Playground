@@ -1,0 +1,56 @@
+\  ****************** Hyper photometry ******************
+\ Survey code: 15
+\ Detection threshold: 6.0 sigma
+\ Convert from MJy/sr: None
+\ Convert from Jy/beam: None
+\ Convert to mJy: True
+\ Estimated r.m.s. to identify sources: 0.00055 mJy
+\  ******************************************************
+\ MAP_ID = Map identifier
+\ HYPER_ID = Source identifier
+\ FLUX_PEAK = Peak flux (mJy/beam)
+\ FLUX = Integrated flux density (mJy)
+\ FLUX_ERR = Flux density uncertainty (mJy)
+\ RESIDUALS = Mean background level (mJy)
+\ POLYN = Polynomial background order
+\ NMSE = Normalized Mean Squared Error of fit: scale-independent metric of
+\ model-data agreement
+\ CHI2_RED = Reduced chi-squared of Gaussian + background fit (valid only if
+\ residuals are Gaussian-distributed with constant variance)
+\ BIC = Bayesian Information Criterion: model selection metric that penalizes
+\ overfitting; lower BIC indicates better trade-off between goodness of fit and
+\ model complexity
+\ FWHM_1 = First axis FWHM (arcsec)
+\ FWHM_2 = Second axis FWHM (arcsec)
+\ PA = Position angle (deg East of North)
+\ STATUS = Fit status flag: 1 = fit succeeded, 0 = fit failed
+\ GLON = Galactic longitude (deg)
+\ GLAT = Galactic latitude (deg)
+\ RA = Right Ascension (deg, J2000)
+\ DEC = Declination (deg, J2000)
+\ DEBLEND = Deblending flag
+\ CLUSTER = Cluster flag
+|           MAP_ID|HYPER_ID| FLUX_PEAK|  FLUX|FLUX_ERR|RESIDUALS|POLYN|  NMSE|CHI2_RED|      BIC|FWHM_1|FWHM_2|    PA|STATUS|     GLON|    GLAT|       RA|      DEC|DEBLEND|CLUSTER|
+|             char|    long|    double|double|  double|   double| long|double|  double|   double|double|double|double|  long|   double|  double|   double|   double|   long|   long|
+|                 |        |mJy / beam|   mJy|     mJy|      mJy|     |      |        |         |arcsec|arcsec|   deg|      |      deg|     deg|      deg|      deg|       |       |
+|             null|    null|      null|  null|    null|     null| null|  null|    null|     null|  null|  null|  null|  null|     null|    null|     null|     null|   null|   null|
+ G294.5117-01.6205        1    0.26469  0.282    0.019   0.00006     2  0.509    0.000 -16841.13  0.046  0.046  -89.7      1 294.51266 -1.62322 173.88546 -63.24759       0       1 
+ G294.5117-01.6205        2    0.39629  0.687    0.040  -0.00001     2  0.322    0.000 -14428.92  0.052  0.052  -90.0      1 294.51266 -1.62308 173.88554 -63.24746       0       1 
+ G294.5117-01.6205        3    0.25011  0.285    0.020   0.00002     3  0.434    0.000 -17110.22  0.046  0.046   90.0      1 294.51265 -1.62255 173.88586 -63.24695       0       1 
+ G294.5117-01.6205        4    0.58391  0.564    0.043   0.00001     2  0.311    0.000 -14434.04  0.046  0.046  -90.0      1 294.51255 -1.62175 173.88617 -63.24616       0       1 
+ G294.5117-01.6205        5    0.18631  0.289    0.020  -0.00000     2  0.455    0.000 -16515.17  0.052  0.046   44.8      1 294.51150 -1.62182 173.88389 -63.24592       0       1 
+ G294.5117-01.6205        6    0.16068  0.198    0.013  -0.00000     3  0.489    0.000 -17445.72  0.046  0.046  -89.9      1 294.51135 -1.62180 173.88358 -63.24585       0       1 
+ G294.5117-01.6205        7    0.12221  0.091    0.012   0.00003     2  0.987    0.000 -17396.73  0.046  0.052   10.8      1 294.51181 -1.62119 173.88496 -63.24541       0       1 
+ G294.5117-01.6205        8    0.33927  0.358    0.025  -0.00002     3  0.408    0.000 -16381.21  0.046  0.046   90.0      1 294.51161 -1.62119 173.88453 -63.24535       0       1 
+ G294.5117-01.6205        9    0.10961  0.104    0.009  -0.00002     3  0.952    0.000 -16591.58  0.052  0.046   -3.3      1 294.51149 -1.62117 173.88429 -63.24530       0       1 
+ G294.5117-01.6205       10    0.17309  0.123    0.017   0.00001     3  0.790    0.000 -16376.85  0.046  0.046   90.0      1 294.51122 -1.62125 173.88366 -63.24529       0       1 
+ G294.5117-01.6205       11    1.68057  1.940    0.127  -0.00007     2  0.142    0.000 -10655.14  0.046  0.046   90.0      1 294.51132 -1.62100 173.88404 -63.24508       0       1 
+ G294.5117-01.6205       12    0.40057  0.414    0.031   0.00001     2  0.650    0.000 -12487.68  0.046  0.052   14.5      1 294.51273 -1.62052 173.88734 -63.24503       0       1 
+ G294.5117-01.6205       13    0.72126  0.799    0.057   0.00002     2  0.242    0.000 -13552.62  0.046  0.046   90.0      1 294.51321 -1.61999 173.88871 -63.24467       0       1 
+ G294.5117-01.6205       14    0.18124  0.275    0.016   0.00000     1  0.810    0.000 -73637.20  0.046  0.052   18.6      1 294.51006 -1.62062 173.88161 -63.24436       0       1 
+ G294.5117-01.6205       15    0.15692  0.534    0.033   0.00000     2  0.072    0.000 -34167.12  0.052  0.052  -70.0      1 294.51291 -1.62310 173.88607 -63.24755       1       2 
+ G294.5117-01.6205       16    2.34400  6.372    0.236   0.00000     2  0.072    0.000 -34167.12  0.052  0.052    9.8      1 294.51290 -1.62307 173.88607 -63.24752       1       2 
+ G294.5117-01.6205       17    0.28311  0.545    0.035   0.00000     2  0.139    0.001 -68470.46  0.046  0.052   50.4      1 294.51147 -1.62113 173.88427 -63.24525       1       4 
+ G294.5117-01.6205       18    3.54448  5.912    0.285   0.00000     2  0.139    0.001 -68470.46  0.052  0.046  -57.7      1 294.51145 -1.62112 173.88424 -63.24524       1       4 
+ G294.5117-01.6205       19    0.28818  0.149    0.037   0.00000     2  0.139    0.001 -68470.46  0.046  0.047   24.2      1 294.51143 -1.62112 173.88420 -63.24523       1       4 
+ G294.5117-01.6205       20    1.46833  4.223    0.138   0.00000     2  0.139    0.001 -68470.46  0.052  0.052  -23.8      1 294.51147 -1.62110 173.88429 -63.24522       1       4 

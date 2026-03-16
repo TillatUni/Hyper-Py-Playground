@@ -1,0 +1,50 @@
+\  ****************** Hyper photometry ******************
+\ Survey code: 15
+\ Detection threshold: 6.0 sigma
+\ Convert from MJy/sr: None
+\ Convert from Jy/beam: None
+\ Convert to mJy: True
+\ Estimated r.m.s. to identify sources: 0.00068 mJy
+\  ******************************************************
+\ MAP_ID = Map identifier
+\ HYPER_ID = Source identifier
+\ FLUX_PEAK = Peak flux (mJy/beam)
+\ FLUX = Integrated flux density (mJy)
+\ FLUX_ERR = Flux density uncertainty (mJy)
+\ RESIDUALS = Mean background level (mJy)
+\ POLYN = Polynomial background order
+\ NMSE = Normalized Mean Squared Error of fit: scale-independent metric of
+\ model-data agreement
+\ CHI2_RED = Reduced chi-squared of Gaussian + background fit (valid only if
+\ residuals are Gaussian-distributed with constant variance)
+\ BIC = Bayesian Information Criterion: model selection metric that penalizes
+\ overfitting; lower BIC indicates better trade-off between goodness of fit and
+\ model complexity
+\ FWHM_1 = First axis FWHM (arcsec)
+\ FWHM_2 = Second axis FWHM (arcsec)
+\ PA = Position angle (deg East of North)
+\ STATUS = Fit status flag: 1 = fit succeeded, 0 = fit failed
+\ GLON = Galactic longitude (deg)
+\ GLAT = Galactic latitude (deg)
+\ RA = Right Ascension (deg, J2000)
+\ DEC = Declination (deg, J2000)
+\ DEBLEND = Deblending flag
+\ CLUSTER = Cluster flag
+|MAP_ID|HYPER_ID| FLUX_PEAK|  FLUX|FLUX_ERR|RESIDUALS|POLYN|  NMSE|CHI2_RED|       BIC|FWHM_1|FWHM_2|    PA|STATUS|     GLON|   GLAT|       RA|      DEC|DEBLEND|CLUSTER|
+|  char|    long|    double|double|  double|   double| long|double|  double|    double|double|double|double|  long|   double| double|   double|   double|   long|   long|
+|      |        |mJy / beam|   mJy|     mJy|      mJy|     |      |        |          |arcsec|arcsec|   deg|      |      deg|    deg|      deg|      deg|       |       |
+|  null|    null|      null|  null|    null|     null| null|  null|    null|      null|  null|  null|  null|  null|     null|   null|     null|     null|   null|   null|
+ 793695        1    0.00009  0.179    0.014   0.00008     2  0.626    0.000  -16471.13  0.025  0.039  -18.3      1 329.71545 1.16172 239.52798 -51.72974       0       1 
+ 793695        2    0.00016  0.323    0.025   0.00005     2  0.544    0.000  -15751.88  0.026  0.050  -34.7      1 329.71892 1.16392 239.52995 -51.72581       0       1 
+ 793695        3    0.00082  1.732    0.118   0.00003     2  0.029    0.000  -15042.04  0.029  0.037   -9.7      1 329.71871 1.16420 239.52940 -51.72574       0       1 
+ 793695        4    0.00063  1.926    0.110  -0.00004     2  0.052    0.000  -29788.05  0.044  0.035  -90.0      1 329.71887 1.16412 239.52968 -51.72570       0       1 
+ 793695        5    0.00017  0.279    0.023   0.00005     2  0.512    0.000  -15561.19  0.025  0.036  -25.2      1 329.71887 1.16433 239.52946 -51.72553       0       1 
+ 793695        6    0.00009  0.295    0.016   0.00000     2  0.110    0.000 -130410.94  0.052  0.030  -10.0      1 329.71878 1.16420 239.52948 -51.72569       1       9 
+ 793695        7    0.00008  0.119    0.013   0.00000     2  0.110    0.000 -130410.94  0.052  0.020   59.0      1 329.71879 1.16419 239.52951 -51.72569       1       9 
+ 793695        8    0.00008  0.145    0.012   0.00000     2  0.110    0.000 -130410.94  0.019  0.036    1.5      1 329.71878 1.16421 239.52947 -51.72568       1       9 
+ 793695        9    0.00025  1.510    0.062   0.00000     2  0.110    0.000 -130410.94  0.052  0.043  -72.4      1 329.71879 1.16421 239.52949 -51.72568       1       9 
+ 793695       10    0.00010  0.455    0.020   0.00000     2  0.110    0.000 -130410.94  0.038  0.052   75.7      1 329.71878 1.16423 239.52946 -51.72567       1       9 
+ 793695       11    0.00103  4.167    0.195   0.00000     2  0.110    0.000 -130410.94  0.043  0.050   17.1      1 329.71881 1.16421 239.52951 -51.72567       1       9 
+ 793695       12    0.00025  1.682    0.070   0.00000     2  0.110    0.000 -130410.94  0.052  0.052  -89.5      1 329.71881 1.16423 239.52949 -51.72566       1       9 
+ 793695       13    0.00011  0.546    0.027   0.00000     2  0.110    0.000 -130410.94  0.032  0.052   -6.6      1 329.71882 1.16423 239.52951 -51.72564       1       9 
+ 793695       14    0.00007  0.136    0.010   0.00000     2  0.110    0.000 -130410.94  0.026  0.032    8.2      1 329.71882 1.16424 239.52949 -51.72563       1       9 

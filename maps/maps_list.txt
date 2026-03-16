@@ -1,0 +1,2 @@
+/home/dassel/G010.3208_added_sources_test.fits
+/home/dassel/G010.3208-99.15708.image.fits

@@ -1,0 +1,56 @@
+\  ****************** Hyper photometry ******************
+\ Survey code: 15
+\ Detection threshold: 6.0 sigma
+\ Convert from MJy/sr: None
+\ Convert from Jy/beam: None
+\ Convert to mJy: True
+\ Estimated r.m.s. to identify sources: 0.00050 mJy
+\  ******************************************************
+\ MAP_ID = Map identifier
+\ HYPER_ID = Source identifier
+\ FLUX_PEAK = Peak flux (mJy/beam)
+\ FLUX = Integrated flux density (mJy)
+\ FLUX_ERR = Flux density uncertainty (mJy)
+\ RESIDUALS = Mean background level (mJy)
+\ POLYN = Polynomial background order
+\ NMSE = Normalized Mean Squared Error of fit: scale-independent metric of
+\ model-data agreement
+\ CHI2_RED = Reduced chi-squared of Gaussian + background fit (valid only if
+\ residuals are Gaussian-distributed with constant variance)
+\ BIC = Bayesian Information Criterion: model selection metric that penalizes
+\ overfitting; lower BIC indicates better trade-off between goodness of fit and
+\ model complexity
+\ FWHM_1 = First axis FWHM (arcsec)
+\ FWHM_2 = Second axis FWHM (arcsec)
+\ PA = Position angle (deg East of North)
+\ STATUS = Fit status flag: 1 = fit succeeded, 0 = fit failed
+\ GLON = Galactic longitude (deg)
+\ GLAT = Galactic latitude (deg)
+\ RA = Right Ascension (deg, J2000)
+\ DEC = Declination (deg, J2000)
+\ DEBLEND = Deblending flag
+\ CLUSTER = Cluster flag
+|MAP_ID|HYPER_ID| FLUX_PEAK|  FLUX|FLUX_ERR|RESIDUALS|POLYN|  NMSE|CHI2_RED|       BIC|FWHM_1|FWHM_2|    PA|STATUS|     GLON|    GLAT|       RA|      DEC|DEBLEND|CLUSTER|
+|  char|    long|    double|double|  double|   double| long|double|  double|    double|double|double|double|  long|   double|  double|   double|   double|   long|   long|
+|      |        |mJy / beam|   mJy|     mJy|      mJy|     |      |        |          |arcsec|arcsec|   deg|      |      deg|     deg|      deg|      deg|       |       |
+|  null|    null|      null|  null|    null|     null| null|  null|    null|      null|  null|  null|  null|  null|     null|    null|     null|     null|   null|   null|
+ 880433        1    0.00010  0.451    0.023   0.00002     2  0.337    0.000  -21278.84  0.057  0.040  -11.7      1 348.57718 -0.92086 259.79417 -39.00863       0       1 
+ 880433        2    0.00005  0.450    0.020   0.00027     2  0.698    0.000  -20909.85  0.057  0.057   90.0      1 348.57793 -0.92079 259.79464 -39.00798       0       1 
+ 880433        3    0.00006  0.266    0.014   0.00000     2  0.440    0.000  -22056.99  0.057  0.032  -43.7      1 348.57550 -0.91701 259.78887 -39.00780       0       1 
+ 880433        4    0.00025  0.938    0.053   0.00003     2  0.087    0.000  -19996.89  0.044  0.036    1.2      1 348.57798 -0.92011 259.79396 -39.00755       0       1 
+ 880433        5    0.00009  0.266    0.018   0.00001     2  0.413    0.000  -20593.48  0.038  0.035   32.7      1 348.57832 -0.91998 259.79407 -39.00720       0       1 
+ 880433        6    0.00015  0.526    0.031  -0.00001     2  0.164    0.000  -21259.10  0.040  0.037   -5.0      1 348.57886 -0.91986 259.79435 -39.00669       0       1 
+ 880433        7    0.00007  0.194    0.014   0.00001     2  0.416    0.000  -22412.65  0.048  0.030   41.3      1 348.57951 -0.92043 259.79543 -39.00648       0       1 
+ 880433        8    0.00005  0.230    0.013  -0.00001     1  0.858    0.000 -101861.71  0.057  0.033  -27.6      1 348.58197 -0.91681 259.79344 -39.00239       0       1 
+ 880433        9    0.00004  0.470    0.018   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   89.8      1 348.57873 -0.91991 259.79431 -39.00683       1      12 
+ 880433       10    0.00009  0.819    0.033   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   90.0      1 348.57873 -0.91989 259.79428 -39.00681       1      12 
+ 880433       11    0.00009  1.448    0.041   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   53.1      1 348.57872 -0.91988 259.79427 -39.00681       1      12 
+ 880433       12    0.00009  1.235    0.032   0.00000     2  0.257    0.000 -293858.77  0.057  0.057  -74.0      1 348.57875 -0.91990 259.79431 -39.00680       1      12 
+ 880433       13    0.00007  1.309    0.041   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   90.0      1 348.57872 -0.91984 259.79423 -39.00679       1      12 
+ 880433       14    0.00046  3.569    0.124   0.00000     2  0.257    0.000 -293858.77  0.057  0.057  -22.4      1 348.57876 -0.91987 259.79428 -39.00678       1      12 
+ 880433       15    0.00006  0.585    0.022   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   86.6      1 348.57878 -0.91990 259.79433 -39.00678       1      12 
+ 880433       16    0.00034  4.151    0.118   0.00000     2  0.257    0.000 -293858.77  0.057  0.057  -90.0      1 348.57876 -0.91985 259.79426 -39.00676       1      12 
+ 880433       17    0.00006  1.117    0.039   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   71.3      1 348.57874 -0.91983 259.79423 -39.00676       1      12 
+ 880433       18    0.00006  0.729    0.025   0.00000     2  0.257    0.000 -293858.77  0.057  0.057  -90.0      1 348.57878 -0.91988 259.79431 -39.00676       1      12 
+ 880433       19    0.00008  0.639    0.026   0.00000     2  0.257    0.000 -293858.77  0.057  0.025   -3.8      1 348.57877 -0.91984 259.79426 -39.00675       1      12 
+ 880433       20    0.00006  0.673    0.024   0.00000     2  0.257    0.000 -293858.77  0.057  0.057   90.0      1 348.57878 -0.91983 259.79426 -39.00673       1      12 
